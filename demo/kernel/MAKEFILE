@@ -1,0 +1,29 @@
+
+
+INCDIR	= z:\include;z:\include\kernel
+LIBDIR  = z:\lib
+OBJDIR	= z:\obj
+
+CC	= bcc.exe
+CFLAGS	= -c -I$(INCDIR) -O2
+
+
+KERLIB  = -I$(INCDIDR) -L$(LIBDIR) arch.lib asm.lib machine.lib llibc.lib \
+           kernel.lib driver.lib $(OBJDIR)\kernel.obj
+
+OBJS	= demo.obj shellcmd.obj
+
+
+target : $(OBJS)
+#        echo -nbin -edemo $(KERLIB) $(OBJS) > cfg.txt
+        bcc @cfg.txt
+#        del cfg.txt
+
+
+.c.obj:
+    $(CC) $(CFLAGS) {$. }
+
+clean:
+    del *.obj
+
+	

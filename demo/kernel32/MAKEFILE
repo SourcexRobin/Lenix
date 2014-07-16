@@ -1,0 +1,54 @@
+#/*
+#/////////////////////////////////////////////////////////////////////////////////////////
+#//                                    SHEMOX操作系统
+#//                              2011 - 2014 @ 源代码工作室
+#//                                     保留所有版权
+#//                          ***----------------------------***
+#//     名    称 : Makefile
+#//     创建时间 : 2014-01-30       创建者  : 罗斌
+#//     修改时间 :                  修改者  : 
+#//
+#//     主要功能 : 用于编译和链接调试用的引导程序
+#//
+#//     说    明 : 在VS2005下正常使用。如果需要使用其他编译工具，需要另行修改。
+#//
+#//  版本变化记录:
+#//  版本号      |    时  间     |    作  者     | 主要变化记录
+#//=======================================================================================
+#//              |  2014-01-30   |    罗  斌     | 除夕夜写的
+#/////////////////////////////////////////////////////////////////////////////////////////
+#*/
+
+SYSINC1 = e:\sourcexstudio\lenix\lenix\include
+SYSINC2 = e:\sourcexstudio\lenix\lenix\include\kernel
+SYSLIB  = e:\sourcexstudio\lenix\lenix\lib
+SYSOBJ  = e:\sourcexstudio\lenix\lenix\obj
+
+CC	= cl.exe
+LINK    = link.exe
+
+CFLAGS	= /c /W3 /FAcs /GS- \
+          /I"$(SYSINC1)" /I"$(SYSINC2)" 
+
+LFLAGS  = /MAP /NODEFAULTLIB /LIBPATH:"$(SYSLIB)" /SUBSYSTEM:CONSOLE \
+          /entry:Lenix_startup /MACHINE:X86 /BASE:0x80000 /FIXED:NO
+
+LIBS    = $(SYSOBJ)\lenix.obj arch.lib asm.lib llibc.lib machine.lib kernel.lib \
+                              gui.lib driver.lib libc.lib msvcrt.lib
+
+OBJS	= fs_test.obj fs_fat32.obj fs.obj shellcmd.obj
+# shellcmd.obj
+
+target : $(OBJS)
+        $(LINK) $(LFLAGS) /OUT:lenix.exe $(SYSOBJ)\startup.obj $(OBJS) $(LIBS)
+
+.c.obj:
+        $(CC) $(CFLAGS) $<
+
+clean:
+    del *.cod
+    del *.map
+    del demo.exe
+    del *.obj
+
+	

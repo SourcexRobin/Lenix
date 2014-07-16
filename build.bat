@@ -1,0 +1,3 @@
+cls
+nmake clean
+nmake

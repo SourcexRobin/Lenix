@@ -1,0 +1,376 @@
+ lenix
+
+ Timestamp is 5353d614 (Sun Apr 20 22:13:40 2014)
+
+ Preferred load address is 00080000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00007ee4H .text                   CODE
+ 0002:00000000 00000a19H .rdata                  DATA
+ 0002:00000a19 00000000H .edata                  DATA
+ 0003:00000000 00000cc0H .data                   DATA
+ 0003:00000cc0 0002c9b0H .bss                    DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       _Lenix_startup             00081000 f   startup.obj
+ 0001:00000030       _Time_to_stime             00081030 f   fs_test.obj
+ 0001:000000a0       _Date_to_sdate             000810a0 f   fs_test.obj
+ 0001:00000110       _Fs_test                   00081110 f   fs_test.obj
+ 0001:000001b0       _Fs_create_test            000811b0 f   fs_test.obj
+ 0001:00000220       _User_initial              00081220 f   fs_test.obj
+ 0001:000002a0       _main                      000812a0 f   fs_test.obj
+ 0001:000002b0       _Fat32_register            000812b0 f   fs_fat32.obj
+ 0001:00001440       _Fs_register               00082440 f   fs.obj
+ 0001:000014f0       __namecmpn                 000824f0 f   fs.obj
+ 0001:00001560       _Fs_open                   00082560 f   fs.obj
+ 0001:00001fe0       _Fs_read                   00082fe0 f   fs.obj
+ 0001:000021a0       _Fs_initial                000831a0 f   fs.obj
+ 0001:000026b0       _Shell_cmd_initial         000836b0 f   shellcmd.obj
+ 0001:00002a80       _Lenix_initial             00083a80 f   lenix.obj
+ 0001:00002ad0       _Lenix_start               00083ad0 f   lenix.obj
+ 0001:00002b20       _Context_initial           00083b20 f   arch:x86.obj
+ 0001:00002bc0       _I386_load_ldt             00083bc0 f   arch:x86.obj
+ 0001:00002bd0       _I386_load_tr              00083bd0 f   arch:x86.obj
+ 0001:00002be0       _I386_reg_dump             00083be0 f   arch:x86.obj
+ 0001:00002c90       _I386_reg_dumpe            00083c90 f   arch:x86.obj
+ 0001:00002d50       _I386_fault_div_zero       00083d50 f   arch:x86.obj
+ 0001:00002d70       _I386_fault_debug          00083d70 f   arch:x86.obj
+ 0001:00002d90       _I386_fault_single_step    00083d90 f   arch:x86.obj
+ 0001:00002dc0       _I386_fault_overflow       00083dc0 f   arch:x86.obj
+ 0001:00002de0       _I386_fault_bound          00083de0 f   arch:x86.obj
+ 0001:00002e00       _I386_fault_invalid_opcode 00083e00 f   arch:x86.obj
+ 0001:00002e20       _I386_fault_device         00083e20 f   arch:x86.obj
+ 0001:00002e40       _I386_fault_double         00083e40 f   arch:x86.obj
+ 0001:00002e60       _I386_fault_fpu_ob         00083e60 f   arch:x86.obj
+ 0001:00002e80       _I386_fault_tss            00083e80 f   arch:x86.obj
+ 0001:00002ea0       _I386_fault_segment        00083ea0 f   arch:x86.obj
+ 0001:00002ec0       _I386_fault_general        00083ec0 f   arch:x86.obj
+ 0001:00002ee0       _I386_fault_page           00083ee0 f   arch:x86.obj
+ 0001:00002f20       _I386_fault_fpu            00083f20 f   arch:x86.obj
+ 0001:00002f40       _Ivt_set                   00083f40 f   arch:x86.obj
+ 0001:000032a0       _Cpu_initial               000842a0 f   arch:x86.obj
+ 0001:00003380       _Io_delay                  00084380 f   arch:cpu.obj
+ 0001:000033a0       _Cpu_psw_set               000843a0 f   asm:x86_32.obj
+ 0001:000033b0       _Cpu_disable_interrupt     000843b0 f   asm:x86_32.obj
+ 0001:000033c0       _Io_inb                    000843c0 f   asm:x86_32.obj
+ 0001:000033d0       _Io_ind                    000843d0 f   asm:x86_32.obj
+ 0001:000033e0       _Io_outb                   000843e0 f   asm:x86_32.obj
+ 0001:000033f0       _Io_inw_buffer             000843f0 f   asm:x86_32.obj
+ 0001:00003410       _Io_outw_buffer            00084410 f   asm:x86_32.obj
+ 0001:00003430       _Cpu_hlt                   00084430 f   asm:x86_32.obj
+ 0001:00003440       _Cpu_tas_i                 00084440 f   asm:x86_32.obj
+ 0001:00003460       _Seg_get_cs                00084460 f   asm:x86_32.obj
+ 0001:00003470       _Proc_switch_to            00084470 f   asm:x86_32.obj
+ 0001:00003490       __nvsprintf                00084490 f   llibc:printf.obj
+ 0001:00003e90       __sprintf                  00084e90 f   llibc:printf.obj
+ 0001:00003eb0       __printf                   00084eb0 f   llibc:printf.obj
+ 0001:00003ed0       __printk                   00084ed0 f   llibc:printf.obj
+ 0001:00003f00       __mprintf                  00084f00 f   llibc:printf.obj
+ 0001:00004020       _Time_to_short             00085020 f   llibc:time.obj
+ 0001:00004050       _Date_to_short             00085050 f   llibc:time.obj
+ 0001:00004090       _Stime_to_time             00085090 f   llibc:time.obj
+ 0001:000040e0       _Sdate_to_date             000850e0 f   llibc:time.obj
+ 0001:00004140       __strlen                   00085140 f   llibc:string.obj
+ 0001:00004160       __strcpy                   00085160 f   llibc:string.obj
+ 0001:000041d0       __nstrcpy                  000851d0 f   llibc:string.obj
+ 0001:00004260       __namecmp                  00085260 f   llibc:string.obj
+ 0001:000042c0       __atoh                     000852c0 f   llibc:string.obj
+ 0001:00004330       __atoi                     00085330 f   llibc:string.obj
+ 0001:00004390       __memzero                  00085390 f   llibc:memory.obj
+ 0001:000043c0       __memcpy                   000853c0 f   llibc:memory.obj
+ 0001:00004420       __up_case                  00085420 f   llibc:char.obj
+ 0001:00004440       __is_hex                   00085440 f   llibc:char.obj
+ 0001:00004470       _Machine_interrupt_mis     00085470 f   machine:machine.obj
+ 0001:00004480       _Machine_imr_set           00085480 f   machine:machine.obj
+ 0001:00004500       _Machine_time_get          00085500 f   machine:machine.obj
+ 0001:00004610       _Machine_date_get          00085610 f   machine:machine.obj
+ 0001:000046f0       _Pic_initial               000856f0 f   machine:machine.obj
+ 0001:000047d0       _Lenix_start_hook          000857d0 f   machine:machine.obj
+ 0001:00004880       _Con_cls                   00085880 f   machine:machine.obj
+ 0001:000048d0       _Con_scroll_up             000858d0 f   machine:machine.obj
+ 0001:00004960       _Con_nl                    00085960 f   machine:machine.obj
+ 0001:000049e0       _Con_tab                   000859e0 f   machine:machine.obj
+ 0001:00004ad0       _Con_back                  00085ad0 f   machine:machine.obj
+ 0001:00004b20       _Con_write_char            00085b20 f   machine:machine.obj
+ 0001:00004be0       _Con_write_string          00085be0 f   machine:machine.obj
+ 0001:00004d60       _Con_print_char            00085d60 f   machine:machine.obj
+ 0001:00004d80       _Con_print_string          00085d80 f   machine:machine.obj
+ 0001:00004dc0       _none                      00085dc0 f   machine:machine.obj
+ 0001:00004dd0       _HandleNormal              00085dd0 f   machine:machine.obj
+ 0001:00004e20       _Handle_left_shift         00085e20 f   machine:machine.obj
+ 0001:00004e40       _Handle_right_shift        00085e40 f   machine:machine.obj
+ 0001:00004e50       _Handle_caps_lock          00085e50 f   machine:machine.obj
+ 0001:00004ea0       _Handle_left_ctrl          00085ea0 f   machine:machine.obj
+ 0001:00004eb0       _Handle_left_alt           00085eb0 f   machine:machine.obj
+ 0001:00004ec0       _Handle_minor              00085ec0 f   machine:machine.obj
+ 0001:00004ed0       _Handle_plus               00085ed0 f   machine:machine.obj
+ 0001:00004ee0       _Handle_gray0              00085ee0 f   machine:machine.obj
+ 0001:00004f10       _Handle_gray1              00085f10 f   machine:machine.obj
+ 0001:00004f40       _Handle_gray2              00085f40 f   machine:machine.obj
+ 0001:00004f70       _Handle_gray3              00085f70 f   machine:machine.obj
+ 0001:00004fa0       _Handle_gray4              00085fa0 f   machine:machine.obj
+ 0001:00004fd0       _Handle_gray5              00085fd0 f   machine:machine.obj
+ 0001:00005000       _Handle_gray6              00086000 f   machine:machine.obj
+ 0001:00005030       _Handle_gray7              00086030 f   machine:machine.obj
+ 0001:00005060       _Handle_gray8              00086060 f   machine:machine.obj
+ 0001:00005090       _Handle_gray9              00086090 f   machine:machine.obj
+ 0001:000050c0       _Handle_graydot            000860c0 f   machine:machine.obj
+ 0001:000050f0       _Handle_numlock            000860f0 f   machine:machine.obj
+ 0001:00005140       _Handle_scrlck             00086140 f   machine:machine.obj
+ 0001:00005190       _Kb_handle                 00086190 f   machine:machine.obj
+ 0001:000051f0       _Kb_do_irq                 000861f0 f   machine:machine.obj
+ 0001:00005240       _Proc_sched_msg            00086240 f   machine:machine.obj
+ 0001:00005290       _Machine_ivt_set           00086290 f   machine:machine.obj
+ 0001:000052d0       _Machine_clock_frequency_set 000862d0 f   machine:machine.obj
+ 0001:00005350       _Machine_initial_hook      00086350 f   machine:machine.obj
+ 0001:00005430       _Machine_initial           00086430 f   machine:machine.obj
+ 0001:000054d0       _Machine_isp_default       000864d0 f   machine:machine.obj
+ 0001:000054e0       _Sched_add                 000864e0 f   kernel:proc.obj
+ 0001:00005560       _Sched_del                 00086560 f   kernel:proc.obj
+ 0001:00005600       _Proc_wait_on              00086600 f   kernel:proc.obj
+ 0001:000056a0       _Proc_resume_on            000866a0 f   kernel:proc.obj
+ 0001:00005730       _Proc_ticks                00086730 f   kernel:proc.obj
+ 0001:000057d0       _Proc_switch_prepare       000867d0 f   kernel:proc.obj
+ 0001:00005870       _Proc_initial              00086870 f   kernel:proc.obj
+ 0001:00005910       _Proc_create               00086910 f   kernel:proc.obj
+ 0001:00005b40       _Proc_sched                00086b40 f   kernel:proc.obj
+ 0001:00005c60       _Proc_sleep                00086c60 f   kernel:proc.obj
+ 0001:00005cd0       _Proc_wakeup               00086cd0 f   kernel:proc.obj
+ 0001:00005d40       _Proc_wait                 00086d40 f   kernel:proc.obj
+ 0001:00005dc0       _Proc_resume               00086dc0 f   kernel:proc.obj
+ 0001:00005e60       _Proc_exit                 00086e60 f   kernel:proc.obj
+ 0001:00005fb0       _Dev_initial               00086fb0 f   kernel:device.obj
+ 0001:00006020       _Dev_registe               00087020 f   kernel:device.obj
+ 0001:00006190       _Dev_open                  00087190 f   kernel:device.obj
+ 0001:00006220       _Dev_close                 00087220 f   kernel:device.obj
+ 0001:000062e0       _Dev_read                  000872e0 f   kernel:device.obj
+ 0001:000063c0       _Dev_sdl_first             000873c0 f   kernel:device.obj
+ 0001:000063d0       _Dev_sdl_next              000873d0 f   kernel:device.obj
+ 0001:00006780       _Bbuf_read                 00087780 f   kernel:blkbuf.obj
+ 0001:00006840       _Bbuf_release              00087840 f   kernel:blkbuf.obj
+ 0001:00006890       _Bbuf_initial              00087890 f   kernel:blkbuf.obj
+ 0001:00006a50       _Tty_echo_hook_set         00087a50 f   kernel:tty.obj
+ 0001:00006aa0       _Tty_put_char              00087aa0 f   kernel:tty.obj
+ 0001:00006be0       _Tty_read                  00087be0 f   kernel:tty.obj
+ 0001:00006ce0       _Tty_write                 00087ce0 f   kernel:tty.obj
+ 0001:00006d50       _Tty_initial               00087d50 f   kernel:tty.obj
+ 0001:00006dd0       _Sys_halt                  00087dd0 f   kernel:sys.obj
+ 0001:00006e00       _Syscall_exit              00087e00 f   kernel:sys.obj
+ 0001:00006e20       _Lck_lock                  00087e20 f   kernel:ipc.obj
+ 0001:00006ee0       _Lck_free                  00087ee0 f   kernel:ipc.obj
+ 0001:00006f70       _Mutex_initial             00087f70 f   kernel:ipc.obj
+ 0001:00006fa0       _Msg_initial               00087fa0 f   kernel:ipc.obj
+ 0001:00006fd0       _Koum_add                  00087fd0 f   kernel:koum.obj
+ 0001:00007110       _Koum_release              00088110 f   kernel:koum.obj
+ 0001:00007200       _Koum_handle_object        00088200 f   kernel:koum.obj
+ 0001:000072b0       _Sc_name_to_cmd            000882b0 f   kernel:shell.obj
+ 0001:00007310       _Sc_get_param              00088310 f   kernel:shell.obj
+ 0001:00007400       _Shell_cmd_add             00088400 f   kernel:shell.obj
+ 0001:00007500       _Shell_initial             00088500 f   kernel:shell.obj
+ 0001:00007670       _Clk_initial               00088670 f   kernel:clock.obj
+ 0001:00007bc0       _Ata_entry                 00088bc0 f   driver:pc_ata.obj
+ 0001:00007c80       __allmul                   00088c80 f   libc:llmul.obj
+ 0001:00007cc0       _memset                    00088cc0 f   libc:memset.obj
+ 0001:00007d20       __aulldvrm                 00088d20 f   msvcrt:ulldvrm.obj
+ 0001:00007dc0       _Irq_clock                 00088dc0 f   asm:pc_32.obj
+ 0001:00007e90       _Irq_keyboard              00088e90 f   asm:pc_32.obj
+ 0001:00007ed0       _Bcd_to_bin                00088ed0 f   llibc:math.obj
+ 0002:00000000       ??_C@_0BD@DHJOKDCB@Lenix?5initial?5OK?$CB?6?$AA@ 00089000     lenix.obj
+ 0002:00000014       ??_C@_0BA@DAEPFAII@Lenix?5start?4?4?4?6?$AA@ 00089014     lenix.obj
+ 0002:00000024       ??_C@_0O@GNOLGLLG@assert?5failed?$AA@ 00089024     lenix.obj
+ 0002:00000034       ??_C@_0CA@NFBECFLL@assert?3?5?$CFs?5?6file?3?5?$CFs?6line?5?3?5?$CFd?6?$AA@ 00089034     lenix.obj
+ 0002:00000054       ??_C@_0BD@LBGLLBEA@critical_nest?5?$DN?$DN?50?$AA@ 00089054     lenix.obj
+ 0002:00000068       ??_C@_0M@PFJIPKOK@src?2lenix?4c?$AA@ 00089068     lenix.obj
+ 0002:00000074       ??_C@_0P@OMPDNAKH@fault?5F?3?5fpu?5?4?$AA@ 00089074     arch:x86.obj
+ 0002:00000084       ??_C@_0BA@NIJOEOJJ@fault?5E?3?5page?5?4?$AA@ 00089084     arch:x86.obj
+ 0002:00000094       ??_C@_0BD@IJHDHEP@fault?5D?3?5general?5?4?$AA@ 00089094     arch:x86.obj
+ 0002:000000a8       ??_C@_0BB@MOECCGMA@fault?5C?3?5stack?5?4?$AA@ 000890a8     arch:x86.obj
+ 0002:000000bc       ??_C@_0BD@KDLJEGMO@fault?5B?3?5segment?5?4?$AA@ 000890bc     arch:x86.obj
+ 0002:000000d0       ??_C@_0P@KEEHDLPC@fault?5A?3?5tss?5?4?$AA@ 000890d0     arch:x86.obj
+ 0002:000000e0       ??_C@_0BC@OIJDDCII@fault?59?3?5fpu?5ob?5?4?$AA@ 000890e0     arch:x86.obj
+ 0002:000000f4       ??_C@_0BC@GALMJMOI@fault?58?3?5double?5?4?$AA@ 000890f4     arch:x86.obj
+ 0002:00000108       ??_C@_0BC@FKJHGCNO@fault?57?3?5device?5?4?$AA@ 00089108     arch:x86.obj
+ 0002:0000011c       ??_C@_0BL@KFAKHLDN@fault?56?3?5invalide?5opcode?5?4?$AA@ 0008911c     arch:x86.obj
+ 0002:00000138       ??_C@_0BB@DFKJNDJL@fault?55?3?5bound?5?4?$AA@ 00089138     arch:x86.obj
+ 0002:0000014c       ??_C@_0BE@LBJJMHNM@fault?54?3?5overflow?5?4?$AA@ 0008914c     arch:x86.obj
+ 0002:00000160       ??_C@_0BI@ONAOFHF@fault?53?3?5single?5setup?5?4?$AA@ 00089160     arch:x86.obj
+ 0002:00000178       ??_C@_0BA@GJHFAJPN@fault?52?3?5null?5?4?$AA@ 00089178     arch:x86.obj
+ 0002:00000188       ??_C@_0BB@PMDJMNIO@fault?51?3?5debug?5?4?$AA@ 00089188     arch:x86.obj
+ 0002:0000019c       ??_C@_0BD@BEGHNHPG@fault?50?3?5div?5zero?4?$AA@ 0008919c     arch:x86.obj
+ 0002:000001b0       ??_C@_0CB@PIBKECFA@DS?$DN?$CF04X?5ES?$DN?$CF04X?5FS?$DN?$CF04X?5GS?$DN?$CF04X?6@ 000891b0     arch:x86.obj
+ 0002:000001d4       ??_C@_0BM@KIFNCEGI@CR0?$DN?$CF08X?5CR2?$DN?$CF08X?5CR3?$DN?$CF08X?6?$AA@ 000891d4     arch:x86.obj
+ 0002:000001f0       ??_C@_0CF@GNKIMLFD@ESP?$DN?$CF08X?5EBP?$DN?$CF08X?5ESI?$DN?$CF08X?5EDI?$DN?$CF@ 000891f0     arch:x86.obj
+ 0002:00000218       ??_C@_0CF@BAOINNOB@EAX?$DN?$CF08X?5ECX?$DN?$CF08X?5EDX?$DN?$CF08X?5EBX?$DN?$CF@ 00089218     arch:x86.obj
+ 0002:00000240       ??_C@_0BP@IMMNFPCH@?6CS?3EIP?$DN?$CF04X?3?$CF08X?5EFLAGS?$DN?$CF08X?6?$AA@ 00089240     arch:x86.obj
+ 0002:00000260       ??_C@_0P@PKLNCCNP@Err?5code?$DN?$CF08X?6?$AA@ 00089260     arch:x86.obj
+ 0002:00000270       ??_C@_03OFAPEBGM@?$CFs?6?$AA@ 00089270     arch:x86.obj
+ 0002:00000274       ??_C@_03JLOMOCCD@OK?6?$AA@ 00089274     arch:x86.obj
+ 0002:00000278       ??_C@_0BH@FALGLGML@CPU?5pm32?5initial?4?4?4?5?5?5?$AA@ 00089278     arch:x86.obj
+ 0002:000002b8       ??_C@_01EEMJAFIK@?6?$AA@   000892b8     llibc:printf.obj
+ 0002:000002bc       ??_C@_01LFCBOECM@?4?$AA@   000892bc     llibc:printf.obj
+ 0002:000002c0       ??_C@_02HAOIJKIC@?$CFc?$AA@ 000892c0     llibc:printf.obj
+ 0002:000002c4       ??_C@_01CLKCMJKC@?5?$AA@   000892c4     llibc:printf.obj
+ 0002:000002c8       ??_C@_03NDEAONJP@?5?5?5?$AA@ 000892c8     llibc:printf.obj
+ 0002:000002cc       ??_C@_05BFHEBJNP@?$CF02X?5?$AA@ 000892cc     llibc:printf.obj
+ 0002:000002d4       ??_C@_02KNHHEEKP@?5?5?$AA@ 000892d4     llibc:printf.obj
+ 0002:000002d8       ??_C@_02KFKPNHPM@?9?5?$AA@ 000892d8     llibc:printf.obj
+ 0002:000002dc       ??_C@_04EHIJODNA@?$CFP?3?5?$AA@ 000892dc     llibc:printf.obj
+ 0002:000002e4       ??_C@_08INBOOONO@Saturday?$AA@ 000892e4     llibc:time.obj
+ 0002:000002f0       ??_C@_06JECMNKMI@Friday?$AA@ 000892f0     llibc:time.obj
+ 0002:000002f8       ??_C@_08HACCIKIA@Thursday?$AA@ 000892f8     llibc:time.obj
+ 0002:00000304       ??_C@_09DLIGFAKA@Wednesday?$AA@ 00089304     llibc:time.obj
+ 0002:00000310       ??_C@_07BAAGCFCM@Tuesday?$AA@ 00089310     llibc:time.obj
+ 0002:00000318       ??_C@_06JLEDEDGH@Monday?$AA@ 00089318     llibc:time.obj
+ 0002:00000320       ??_C@_06OOPIFAJ@Sunday?$AA@ 00089320     llibc:time.obj
+ 0002:00000328       ??_C@_04CLCEDBPF@time?$AA@ 00089328     llibc:time.obj
+ 0002:00000330       ??_C@_06EEBGGNGI@time?4c?$AA@ 00089330     llibc:time.obj
+ 0002:00000338       ??_C@_04JNIHBGGH@date?$AA@ 00089338     llibc:time.obj
+ 0002:00000340       _kb_handle_tab             00089340     machine:machine.obj
+ 0002:00000640       ??_C@_04GMALNMBL@OK?$CB?6?$AA@ 00089640     machine:machine.obj
+ 0002:00000648       ??_C@_0BG@BADFNDM@PC?5pic?5initial?4?4?4?5?5?5?5?$AA@ 00089648     machine:machine.obj
+ 0002:00000660       ??_C@_0BI@NHFFANLN@PC?5consol?5initial?4?4?4?5?5?5?$AA@ 00089660     machine:machine.obj
+ 0002:00000678       ??_C@_0DC@MJOLGCMH@keyboard?5irq?4stat?3?5?$CF08X?5ascii?3?5?$CF@ 00089678     machine:machine.obj
+ 0002:000006ac       ??_C@_0BC@HHCNNAFF@sched?5times?3?5?$CF8d?5?$AA@ 000896ac     machine:machine.obj
+ 0002:000006c8       ??_C@_06IGODLHJP@proc?4c?$AA@ 000896c8     kernel:proc.obj
+ 0002:000006d0       ??_C@_0BE@LIJHKGMO@Lenix?5try?5to?5sleep?4?$AA@ 000896d0     kernel:proc.obj
+ 0002:000006e4       ??_C@_08PDLGLHKP@proclist?$AA@ 000896e4     kernel:proc.obj
+ 0002:000006f0       ??_C@_0CJ@PHCMJNFH@proc?3?$CFs?5stack?5overflow?$CB?5sp?3?$CFp?5bo@ 000896f0     kernel:proc.obj
+ 0002:0000071c       ??_C@_04EAPMNACM@idle?$AA@ 0008971c     kernel:proc.obj
+ 0002:00000724       ??_C@_0BG@LMNCPDCG@process?5initial?4?4?4?5?5?5?$AA@ 00089724     kernel:proc.obj
+ 0002:0000073c       ??_C@_0P@IGLAPKCI@0?5?$CB?$DN?5stacksize?$AA@ 0008973c     kernel:proc.obj
+ 0002:0000074c       ??_C@_0O@JMLMFFGB@NULL?5?$CB?$DN?5stack?$AA@ 0008974c     kernel:proc.obj
+ 0002:0000075c       ??_C@_0O@GBLECFPN@NULL?5?$CB?$DN?5entry?$AA@ 0008975c     kernel:proc.obj
+ 0002:0000076c       ??_C@_0N@MPMENKGI@NULL?5?$CB?$DN?5name?$AA@ 0008976c     kernel:proc.obj
+ 0002:0000077c       ??_C@_0BD@GCALCMHC@idle?5try?5to?5sleep?4?$AA@ 0008977c     kernel:proc.obj
+ 0002:00000790       ??_C@_0CI@HEIMIMFL@parameter?5error?5or?5has?5process?5w@ 00089790     kernel:proc.obj
+ 0002:000007b8       ??_C@_0BG@KPCPPLM@process?5resume?5error?$CB?$AA@ 000897b8     kernel:proc.obj
+ 0002:000007d0       ??_C@_0BJ@OHCLPFHE@INVALID_HANDLE?5?$CB?$DN?5handle?$AA@ 000897d0     kernel:proc.obj
+ 0002:000007ec       ??_C@_06CHPEJBOD@device?$AA@ 000897ec     kernel:device.obj
+ 0002:000007f4       ??_C@_08IOFIHHIH@device?4c?$AA@ 000897f4     kernel:device.obj
+ 0002:00000800       ??_C@_05HNNDEAND@entry?$AA@ 00089800     kernel:device.obj
+ 0002:00000808       ??_C@_04MEMAJGDJ@name?$AA@ 00089808     kernel:device.obj
+ 0002:00000810       ??_C@_0BI@CJGKMMND@device?9?$DOdev_ref_cnt?5?$DO?50?$AA@ 00089810     kernel:device.obj
+ 0002:00000828       ??_C@_09OJCCCDEJ@size?5?$DO?$DN?50?$AA@ 00089828     kernel:device.obj
+ 0002:00000834       ??_C@_06HOHPNJLC@buffer?$AA@ 00089834     kernel:device.obj
+ 0002:0000083c       ??_C@_0BA@FOOPJMPB@NULL?5?$CB?$DN?5bb_free?$AA@ 0008983c     kernel:blkbuf.obj
+ 0002:0000084c       ??_C@_08HDNGNFCH@blkbuf?4c?$AA@ 0008984c     kernel:blkbuf.obj
+ 0002:00000858       ??_C@_0P@MDBGMHII@NULL?5?$CB?$DN?5blkbuf?$AA@ 00089858     kernel:blkbuf.obj
+ 0002:00000868       ??_C@_0BH@GAOMEACD@Block?5buffer?5is?5NULL?$CB?6?$AA@ 00089868     kernel:blkbuf.obj
+ 0002:00000880       ??_C@_0BG@HLLDADII@blkbuf?9?$DObb_refcnt?5?$DO?50?$AA@ 00089880     kernel:blkbuf.obj
+ 0002:00000898       ??_C@_06IMPBIGNP@bbelim?$AA@ 00089898     kernel:blkbuf.obj
+ 0002:000008a0       ??_C@_0BD@JEIFALBJ@tty?5initial?4?4?4?5?5?5?5?$AA@ 000898a0     kernel:tty.obj
+ 0002:000008b4       ??_C@_0BE@KLGEIKPP@Lenix?5halt?4?5hit?3?5?$CFs?$AA@ 000898b4     kernel:sys.obj
+ 0002:000008c8       ??_C@_0M@LMEANPIC@NULL?5?$CB?$DN?5lck?$AA@ 000898c8     kernel:ipc.obj
+ 0002:000008d4       ??_C@_05MNIEOLGC@ipc?4c?$AA@ 000898d4     kernel:ipc.obj
+ 0002:000008dc       ??_C@_0BG@GIIALDJD@mutex?5initial?4?4?4?5?5?5?5?5?$AA@ 000898dc     kernel:ipc.obj
+ 0002:000008f4       ??_C@_0BI@NBMOOJPK@message?5initial?4?4?4?4?5?5?5?5?$AA@ 000898f4     kernel:ipc.obj
+ 0002:0000090c       ??_C@_0BC@LPMMEOOG@kot_unuse?5?$CB?$DN?5type?$AA@ 0008990c     kernel:koum.obj
+ 0002:00000920       ??_C@_0BA@HILKLLDE@NULL?5?$CB?$DN?5release?$AA@ 00089920     kernel:koum.obj
+ 0002:00000930       ??_C@_0P@FICDHJCA@NULL?5?$CB?$DN?5object?$AA@ 00089930     kernel:koum.obj
+ 0002:00000940       ??_C@_06JGPNJGPO@koum?4c?$AA@ 00089940     kernel:koum.obj
+ 0002:00000948       ??_C@_0BG@PMLAOBHG@koi?9?$DOkoi_ref_cnt?5?$DO?$DN?50?$AA@ 00089948     kernel:koum.obj
+ 0002:00000960       ??_C@_0BI@LJDMCJJJ@NULL?5?$CB?$DN?5koi?9?$DOkoi_object?$AA@ 00089960     kernel:koum.obj
+ 0002:00000978       ??_C@_0BI@EMOFBOHO@?6bad?5or?5unkown?5command?6?$AA@ 00089978     kernel:shell.obj
+ 0002:00000990       ??_C@_09HADENOPA@?6Lenix?3?5?$DO?$AA@ 00089990     kernel:shell.obj
+ 0002:0000099c       ??_C@_07GJICHGAB@?5?5?5?5?$CFS?6?$AA@ 0008999c     kernel:shell.obj
+ 0002:000009a4       ??_C@_0BB@HAKHIHHN@System?5command?3?6?$AA@ 000899a4     kernel:shell.obj
+ 0002:000009b8       ??_C@_0BE@NNGJNHGF@Lenix?5ver?3?5?$CFd?4?$CF02d?6?$AA@ 000899b8     kernel:shell.obj
+ 0002:000009cc       ??_C@_08LPEFHFBM@FAILED?$CB?6?$AA@ 000899cc     kernel:shell.obj
+ 0002:000009d8       ??_C@_04POHMOPHP@LeSH?$AA@ 000899d8     kernel:shell.obj
+ 0002:000009e0       ??_C@_03MDPKMNBM@ver?$AA@  000899e0     kernel:shell.obj
+ 0002:000009e4       ??_C@_04PCJFHION@help?$AA@ 000899e4     kernel:shell.obj
+ 0002:000009ec       ??_C@_0BF@PACIOFMD@shell?5initial?4?4?4?5?5?5?5?$AA@ 000899ec     kernel:shell.obj
+ 0002:00000a04       ??_C@_0BF@FONJNPCB@clock?5initial?4?4?4?5?5?5?5?$AA@ 00089a04     kernel:clock.obj
+ 0003:00000c40       _i386_fault_name           0008ac40     arch:x86.obj
+ 0003:00000c9c       _pc_com                    0008ac9c     machine:machine.obj
+ 0003:00000cb8       _keyboard_status           0008acb8     machine:machine.obj
+ 0003:000059a0       _critical_nest             0008f9a0     arch:cpu.obj
+ 0003:00027d78       _syscall                   000b1d78     kernel:sys.obj
+ 0003:0002d5e8       _physical_memory           000b75e8     <common>
+ 0003:0002d5ec       _led                       000b75ec     <common>
+ 0003:0002d5f0       _keyboard_do_irq           000b75f0     <common>
+ 0003:0002d5f4       _machine_imr               000b75f4     <common>
+ 0003:0002d5f8       _gray                      000b75f8     <common>
+ 0003:0002d5fc       _e0e1                      000b75fc     <common>
+ 0003:0002d600       _interrupt_nest            000b7600     <common>
+ 0003:0002d620       _machine_ivt               000b7620     <common>
+ 0003:0002d660       _ticks                     000b7660     <common>
+ 0003:0002d664       _proc_current              000b7664     <common>
+ 0003:0002d668       _proc_need_sched           000b7668     <common>
+ 0003:0002d66c       _proc_cpu_time             000b766c     <common>
+
+ entry point at        0001:00000000
+
+ Static symbols
+
+ 0001:000002f0       _Fat32_initial             000812f0 f   fs_fat32.obj
+ 0001:00000500       _Fat32_fnode_find          00081500 f   fs_fat32.obj
+ 0001:000007c0       _Fat32_dir_find            000817c0 f   fs_fat32.obj
+ 0001:00000af0       _Fat32_next_cluster        00081af0 f   fs_fat32.obj
+ 0001:00000bb0       _Fat32_get_directory_name  00081bb0 f   fs_fat32.obj
+ 0001:00000e50       _Fat32_fnode_create        00081e50 f   fs_fat32.obj
+ 0001:00000f10       _Fat32_name_to_dir         00081f10 f   fs_fat32.obj
+ 0001:00000fa0       _Fat32_is_short_dir_name   00081fa0 f   fs_fat32.obj
+ 0001:00001090       _Fat32_name_to_short_name  00082090 f   fs_fat32.obj
+ 0001:000010a0       _Fat32_fnode_read          000820a0 f   fs_fat32.obj
+ 0001:000011b0       _Fat32_read                000821b0 f   fs_fat32.obj
+ 0001:000013f0       _Fat32_offset_to_clus      000823f0 f   fs_fat32.obj
+ 0001:00001a70       _Fs_fnode_information      00082a70 f   fs.obj
+ 0001:00001ac0       _Fs_get_subpath            00082ac0 f   fs.obj
+ 0001:00001ba0       _Fs_alloc_fnode            00082ba0 f   fs.obj
+ 0001:00001c40       _Fs_free_fnode             00082c40 f   fs.obj
+ 0001:00001cf0       _Fs_alloc_file             00082cf0 f   fs.obj
+ 0001:00001d80       _Fs_free_file              00082d80 f   fs.obj
+ 0001:00001e20       _Fs_release_file           00082e20 f   fs.obj
+ 0001:00001ec0       _Fs_open_device            00082ec0 f   fs.obj
+ 0001:00002220       _Fs_information            00083220 f   fs.obj
+ 0001:000022e0       _Fs_detect_partition       000832e0 f   fs.obj
+ 0001:00002490       _Fs_fat32_ext              00083490 f   fs.obj
+ 0001:000025d0       _Fs_specify                000835d0 f   fs.obj
+ 0001:00002660       _Fs_get_driver             00083660 f   fs.obj
+ 0001:00002730       _Sc_mem                    00083730 f   shellcmd.obj
+ 0001:000027d0       _Sc_cls                    000837d0 f   shellcmd.obj
+ 0001:000027f0       _Sc_com                    000837f0 f   shellcmd.obj
+ 0001:000028b0       _Sc_inb                    000838b0 f   shellcmd.obj
+ 0001:00002930       _Sc_outb                   00083930 f   shellcmd.obj
+ 0001:00002a00       _Sc_ind                    00083a00 f   shellcmd.obj
+ 0001:00002bb0       _I386_refresh_cs           00083bb0 f   arch:x86.obj
+ 0001:00002f90       _I386_sys_trap_initial     00083f90 f   arch:x86.obj
+ 0001:00004800       _Con_set_cursor            00085800 f   machine:machine.obj
+ 0001:00004c30       _Con_print                 00085c30 f   machine:machine.obj
+ 0001:000054d0       _Ata_close                 000864d0 f   kernel:proc.obj
+ 0001:000054d0       _Ata_open                  000864d0 f   kernel:proc.obj
+ 0001:000054d0       _Proc_release              000864d0 f   kernel:proc.obj
+ 0001:00005830       _Proc_refresh_sched_factor 00086830 f   kernel:proc.obj
+ 0001:00005ea0       _Dev_get                   00086ea0 f   kernel:device.obj
+ 0001:00005ee0       _Dev_put                   00086ee0 f   kernel:device.obj
+ 0001:00005f20       _Dev_sdl_del               00086f20 f   kernel:device.obj
+ 0001:00005f70       _Dev_query_by_name         00086f70 f   kernel:device.obj
+ 0001:000063e0       _Bbuf_get                  000873e0 f   kernel:blkbuf.obj
+ 0001:00006490       _Bbuf_put                  00087490 f   kernel:blkbuf.obj
+ 0001:00006500       _Bbuf_hash_add             00087500 f   kernel:blkbuf.obj
+ 0001:000065b0       _Bbuf_hash_del             000875b0 f   kernel:blkbuf.obj
+ 0001:00006650       _Bbuf_query                00087650 f   kernel:blkbuf.obj
+ 0001:000066a0       _Bbuf_eliminate            000876a0 f   kernel:blkbuf.obj
+ 0001:000069a0       _Tty_copy_to_cook          000879a0 f   kernel:tty.obj
+ 0001:00007250       _Sc_decode_cmdline         00088250 f   kernel:shell.obj
+ 0001:00007350       _Lenix_shell               00088350 f   kernel:shell.obj
+ 0001:00007490       _Sc_help                   00088490 f   kernel:shell.obj
+ 0001:000074e0       _Sc_ver                    000884e0 f   kernel:shell.obj
+ 0001:00007590       _Timer_handle              00088590 f   kernel:clock.obj
+ 0001:00007610       _Tty_echo_hook_default     00088610 f   kernel:clock.obj
+ 0001:00007610       _Clk_default_ticks_hook    00088610 f   kernel:clock.obj
+ 0001:00007620       _Clk_do_clock              00088620 f   kernel:clock.obj
+ 0001:000076c0       _Ata_device_ready          000886c0 f   driver:pc_ata.obj
+ 0001:00007700       _Ata_data_request          00088700 f   driver:pc_ata.obj
+ 0001:00007740       _Ata_size                  00088740 f   driver:pc_ata.obj
+ 0001:00007840       _Ata_command               00088840 f   driver:pc_ata.obj
+ 0001:000078f0       _Ata_read_sectors          000888f0 f   driver:pc_ata.obj
+ 0001:000079c0       _Ata_write_sectors         000889c0 f   driver:pc_ata.obj
+ 0001:00007a90       _Ata_read                  00088a90 f   driver:pc_ata.obj
+ 0001:00007b20       _Ata_write                 00088b20 f   driver:pc_ata.obj
+ 0001:00007bb0       _Ata_ctrl                  00088bb0 f   driver:pc_ata.obj
+ 0001:00007e30       __Irq_keyboard             00088e30 f   asm:pc_32.obj

@@ -1,0 +1,2 @@
+-nbin -nbin -edemo -Lz:\lib arch.lib asm.lib machine.lib llibc.lib kernel.lib driver.lib 
+z:\obj\lenix.obj obj\demo.obj 

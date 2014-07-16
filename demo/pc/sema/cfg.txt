@@ -1,0 +1,1 @@
+-nbin -edemo -Iz:\include;z:\include\kernel -Lz:\lib arch.lib asm.lib machine.lib libc.lib kernel.lib driver.lib z:\obj\lenix.obj obj\demo.obj obj\shellcmd.obj
